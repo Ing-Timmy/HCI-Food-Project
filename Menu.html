@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		body {
+		background-color: #ffda6b;
+		text-align: center;
+		font-size:20px;
+		}
+		
+		
+		input[type=text] {
+		border: 2px solid black;
+		border-radius: 3px;
+		 width: 10%;
+		padding: 4px 4px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		 font-size:15px;
+		}
+		
+		input[type=button], input[type=submit], input[type=reset] {
+		 border: 2px solid black;
+		 border-radius:4px;
+		 padding: 12px 15px;
+		 background-color: #F1C77A;
+		 }
+		 
+		 
+		<title>
+			Food Truck Menu
+		</title>
+	</style>
+	</head>
+	
+	<body>
+		<!-- Sends data to orderreceived.php -->
+		<form action="orderreceived.php" method="post">
+			<h1>Food Truck Menu</h1>
+			<h2>Most Popular</h2>
+			<!-- menufood[] is an array for all menu items with values of price and itemID imbedded -->
+			<input type="checkbox" name="menufood[]" value="8 | 8.00"/> Mega Meat Man ($8.00)
+			Qty:
+			<select name="foodqty[]">
+				<option value="8 | 1">1</option>
+				<option value="8 | 2">2</option>
+				<option value="8 | 3">3</option>
+				<option value="8 | 4">4</option>
+				<option value="8 | 5">5</option>
+				<option value="8 | 6">6</option>
+				<option value="8 | 7">7</option>
+				<option value="8 | 8">8</option>
+				<option value="8 | 9">9</option>
+				<option value="8 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="9 | 6.50"/> Modest Johnny ($6.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="9 | 1">1</option>
+				<option value="9 | 2">2</option>
+				<option value="9 | 3">3</option>
+				<option value="9 | 4">4</option>
+				<option value="9 | 5">5</option>
+				<option value="9 | 6">6</option>
+				<option value="9 | 7">7</option>
+				<option value="9 | 8">8</option>
+				<option value="9 | 9">9</option>
+				<option value="9 | 10">10</option>
+			</select>
+			
+			<br/><br/><br/><br/>
+			
+			<h3>Hotdogs</h3>
+			<input type="checkbox" name="menufood[]" value="10 | 4.00"/> Subway Routine ($4.00)
+			Qty:
+			<select name="foodqty[]">
+				<option value="10 | 1">1</option>
+				<option value="10 | 2">2</option>
+				<option value="10 | 3">3</option>
+				<option value="10 | 4">4</option>
+				<option value="10 | 5">5</option>
+				<option value="10 | 6">6</option>
+				<option value="10 | 7">7</option>
+				<option value="10 | 8">8</option>
+				<option value="10 | 9">9</option>
+				<option value="10 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="11 | 4.50"/> Cheesy Choice ($4.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="11 | 1">1</option>
+				<option value="11 | 2">2</option>
+				<option value="11 | 3">3</option>
+				<option value="11 | 4">4</option>
+				<option value="11 | 5">5</option>
+				<option value="11 | 6">6</option>
+				<option value="11 | 7">7</option>
+				<option value="11 | 8">8</option>
+				<option value="11 | 9">9</option>
+				<option value="11 | 10">10</option>
+			</select>
+			
+			<br/><br/>
+			
+			<h3>Hamburgers</h3>
+			<input type="checkbox" name="menufood[]" value="12 | 6.00"/> Double Decker ($6.00)
+			Qty:
+			<select name="foodqty[]">
+				<option value="12 | 1">1</option>
+				<option value="12 | 2">2</option>
+				<option value="12 | 3">3</option>
+				<option value="12 | 4">4</option>
+				<option value="12 | 5">5</option>
+				<option value="12 | 6">6</option>
+				<option value="12 | 7">7</option>
+				<option value="12 | 8">8</option>
+				<option value="12 | 9">9</option>
+				<option value="12 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="13 | 6.50"/> Triple Tripoli ($6.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="13 | 1">1</option>
+				<option value="13 | 2">2</option>
+				<option value="13 | 3">3</option>
+				<option value="13 | 4">4</option>
+				<option value="13 | 5">5</option>
+				<option value="13 | 6">6</option>
+				<option value="13 | 7">7</option>
+				<option value="13 | 8">8</option>
+				<option value="13 | 9">9</option>
+				<option value="13 | 10">10</option>
+			</select>
+			
+			<br/><br/>
+			
+			<h3>Sides</h3>
+			<input type="checkbox" name="menufood[]" value="14 | 1.50"/> French fries ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="14 | 1">1</option>
+				<option value="14 | 2">2</option>
+				<option value="14 | 3">3</option>
+				<option value="14 | 4">4</option>
+				<option value="14 | 5">5</option>
+				<option value="14 | 6">6</option>
+				<option value="14 | 7">7</option>
+				<option value="14 | 8">8</option>
+				<option value="14 | 9">9</option>
+				<option value="14 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="15 | 1.50"/> Onion Rings ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="15 | 1">1</option>
+				<option value="15 | 2">2</option>
+				<option value="15 | 3">3</option>
+				<option value="15 | 4">4</option>
+				<option value="15 | 5">5</option>
+				<option value="15 | 6">6</option>
+				<option value="15 | 7">7</option>
+				<option value="15 | 8">8</option>
+				<option value="15 | 9">9</option>
+				<option value="15 | 10">10</option>
+			</select>
+			
+			<h3>Drinks</h3>
+			<input type="checkbox" name="menufood[]" value="16 | 1.00"/> Water ($1.00)
+			Qty:
+			<select name="foodqty[]">
+				<option value="16 | 1">1</option>
+				<option value="16 | 2">2</option>
+				<option value="16 | 3">3</option>
+				<option value="16 | 4">4</option>
+				<option value="16 | 5">5</option>
+				<option value="16 | 6">6</option>
+				<option value="16 | 7">7</option>
+				<option value="16 | 8">8</option>
+				<option value="16 | 9">9</option>
+				<option value="16 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="17 | 1.50"/> Sprite ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="17 | 1">1</option>
+				<option value="17 | 2">2</option>
+				<option value="17 | 3">3</option>
+				<option value="17 | 4">4</option>
+				<option value="17 | 5">5</option>
+				<option value="17 | 6">6</option>
+				<option value="17 | 7">7</option>
+				<option value="17 | 8">8</option>
+				<option value="17 | 9">9</option>
+				<option value="17 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="18 | 1.50"/> Fanta Orange ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="18 | 1">1</option>
+				<option value="18 | 2">2</option>
+				<option value="18 | 3">3</option>
+				<option value="18 | 4">4</option>
+				<option value="18 | 5">5</option>
+				<option value="18 | 6">6</option>
+				<option value="18 | 7">7</option>
+				<option value="18 | 8">8</option>
+				<option value="18 | 9">9</option>
+				<option value="18 | 10">10</option>
+			</select>
+			
+			<br/><br/>
+			
+			<input type="checkbox" name="menufood[]" value="19 | 1.50"/> Coke ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="19 | 1">1</option>
+				<option value="19 | 2">2</option>
+				<option value="19 | 3">3</option>
+				<option value="19 | 4">4</option>
+				<option value="19 | 5">5</option>
+				<option value="19 | 6">6</option>
+				<option value="19 | 7">7</option>
+				<option value="19 | 8">8</option>
+				<option value="19 | 9">9</option>
+				<option value="19 | 10">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="20 | 1.50"/> Dr. Pepper ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="20 | 1">1</option>
+				<option value="20 | 2">2</option>
+				<option value="20 | 3">3</option>
+				<option value="20 | 4">4</option>
+				<option value="20 | 5">5</option>
+				<option value="20 | 6">6</option>
+				<option value="20 | 7">7</option>
+				<option value="20 | 8">8</option>
+				<option value="20 | 8">9</option>
+				<option value="20 | 9">10</option>
+			</select>
+			
+			<input type="checkbox" name="menufood[]" value="21 | 1.50"/> Lemonade ($1.50)
+			Qty:
+			<select name="foodqty[]">
+				<option value="21 | 1">1</option>
+				<option value="21 | 2">2</option>
+				<option value="21 | 3">3</option>
+				<option value="21 | 4">4</option>
+				<option value="21 | 5">5</option>
+				<option value="21 | 6">6</option>
+				<option value="21 | 7">7</option>
+				<option value="21 | 8">8</option>
+				<option value="21 | 9">9</option>
+				<option value="21 | 10">10</option>
+			</select>
+			
+			<br/><br/><br/><br/><br/>
+			
+			<!-- Combobox of pickup locations -->
+			Pickup Location: 
+			<select name="location">
+				<option value="CSUEast">CSUEast</option>
+				<option value="BookbearCorner">BookbearCorner</option>
+				<option value="JonesboroMain">JonesboroMain</option>
+				<option value="MorrowStreet">MorrowStreet</option>
+				<option value="WillburyGrove">WillburyGrove</option>
+			</select>
+			<!-- Text for customer name input -->
+			Name:
+			<input type="text" name="cname">
+			
+			<br/><br/><br/>
+			
+			<input type="submit" value="Checkout" /> 
+			<input type="reset" value="Reset" />
+		</form>
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
